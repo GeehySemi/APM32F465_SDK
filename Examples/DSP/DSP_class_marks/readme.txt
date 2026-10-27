@@ -1,0 +1,65 @@
+/*!
+ * @file        readme.txt
+ *
+ * @brief       This file is routine instruction
+ *
+ * @version     V1.0.0
+ *
+ * @date        2023-03-08
+ *
+ * @attention
+ *
+ *  Copyright (C) 2023 Geehy Semiconductor
+ *
+ *  You may not use this file except in compliance with the
+ *  GEEHY COPYRIGHT NOTICE (GEEHY SOFTWARE PACKAGE LICENSE).
+ *
+ *  The program is only for reference, which is distributed in the hope
+ *  that it will be useful and instructional for customers to develop
+ *  their software. Unless required by applicable law or agreed to in
+ *  writing, the program is distributed on an "AS IS" BASIS, WITHOUT
+ *  ANY WARRANTY OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the GEEHY SOFTWARE PACKAGE LICENSE for the governing permissions
+ *  and limitations under the License.
+ */
+
+&par Example Description
+
+Example code to calculate Minimum, Maximum
+Mean, std and variance of marks obtained in a class
+
+The demo can be displayed using serial assistant.
+After power on, can press KEY1 to start demo test.
+
+&par Hardware Description
+
+USART1_TX(PA9) ----> host_RX
+USART1_RX(PA10)----> host_TX
+
+  - USART1 configured as follow:
+  - BaudRate = 115200
+  - Word Length = USART_WordLength_8b
+  - Stop Bit = USART_StopBits_1
+  - Parity = USART_Parity_No
+  - Hardware flow control disabled (RTS and CTS signals)
+  - Receive and transmit enabled
+
+&par Directory contents
+
+  - DSP/DSP_class_marks/Source/apm32f465_int.c                 Interrupt handlers
+  - DSP/DSP_class_marks/Source/main.c                          Main program
+  - DSP/DSP_class_marks/Source/arm_class_marks_example_f32.c   Example code to calculate Minimum, Maximum
+                                                               Mean, std and variance of marks obtained in a class
+  - Boards/Board_APM32F465_MINI/src/bsp_usart.c                Usart board support package body
+  - Boards/Board_APM32F465_MINI/src/bsp_delay.c                Delay board support package body
+  - Boards/Board_APM32F465_MINI/src/bsp_key.c                  Key board support package body
+
+&par IDE environment
+
+  - MDK-ARM V5.29.0.0
+  - EWARM V8.50.5.26295
+  - Eclipse V2022-06（4.24.0）
+
+&par Hardware and Software environment
+
+  - This example runs on APM32F465 MINI Devices.
